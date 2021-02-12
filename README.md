@@ -1,3 +1,35 @@
+# Keep in Mind
+
+You need a [json-server](https://www.npmjs.com/package/json-server) running to perform all the CRUD operations built into the app.
+
+## Install json-server
+
+Create a new directory and run the following commands
+
+     npm init -y
+     npm i json-server
+     
+Make a npm script with the command `json-server -p 3001 -w db.json`
+
+Create a file in the same directory with the name of `db.json` with following contents:
+
+    {
+        "streams": [
+            {
+              "title": "My first",
+              "description": "Stream is what I meant to say. Don't get any weird ideas. LOL",
+              "id": 1
+            },
+            {
+              "title": "mE is creating stuff on the web",
+              "description": "Another trial",
+              "id": 2
+            }
+        ]
+      }
+      
+Finally run the json-server in conjunction with the react dev server
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
